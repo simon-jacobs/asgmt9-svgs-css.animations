@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <section class="container-center">
+        <div class="wrapper">
+            <div class="wrapper-max-width">
+                <div class="title">
+                    <h1 class="animate__animated animate__flipInY">Logga in</h1>
+                </div>
+                <form>
+                    <div class="input-box">
+                        <label for="email" class="label">E-postadress</label>
+                        <input class="email" type="text" name="email" placeholder="E-postadress" pattern="[a-zA-Z]">
+                        <label for="password" class="label">Lösenord</label>
+                        <input class="password" type="password" name="password" placeholder="Lösenord" required minlength="8">
+                        <div class="flex-checkbox">
+                            <input type="checkbox" class="checkbox" name="checkbox">
+                            <label for="checkbox">Vill du hålla dig inloggad?</label>
+                        </div>
+                        <button class="button" for="input" type="submit" value="submit">Logga in</button>
+                    </div>
+                </form>
+                <div class="login-with">
+                    <a href="#" class="button button-facebook">
+                        <svg>
+                            <use href="images/facebook.svg#facebook"></use>
+                        </svg>
+                        Logga in med Facebook</a>
+                </div>
+                <div class="password-reset">
+                    <a class="transition-scale" href="#">Glömt lösenord?</a>
+                </div>
+                <div class="create-account-wrapper">
+                    <p>Har du inget konto?</p>
+                    <a class="transition-scale"" href="#">SKAPA KONTO</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
